@@ -1,6 +1,8 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300;500&family=Noto+Sans+JP:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 /* global css */
 .display {
   font-family: "Asap", sans-serif;
@@ -49,6 +51,8 @@ h3 {
 
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .cardboard {
   }
   .app-body2 {
     background: linear-gradient(-70deg, #43ec43 45%, rgba(0, 0, 0, 0.3) 30%),
@@ -109,12 +113,21 @@ h3 {
     color: rgb(243, 203, 203);
     float: right;
   }
-
+  .date h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: right;
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+  }
   .results {
     margin: 2rem;
+    padding-left: 4rem;
+    width: 80%;
   }
   .c-header {
-    height: 210px;
+    height: 250px;
     background-color: rgba(17, 15, 15, 0.3);
     display: flex;
     justify-content: space-between;
@@ -124,10 +137,13 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.2rem;
   }
   .city-time {
     margin: 1.5rem 2rem 0 0;
+    padding: 2rem;
   }
+
   .city-name,
   .country {
     font-size: 1.5rem;
@@ -155,6 +171,49 @@ h3 {
   .cloud-logo {
     width: 6rem;
     height: 7rem;
+    margin-left: 2rem;
+  }
+  .grid-left {
+    width: 40%;
+    background: rgba(95, 252, 204, 0.69);
+    min-height: 322px;
+    padding: 2.8em 1.5em;
+  }
+  .grid-right {
+    width: 60%;
+    background: rgba(255, 8, 8, 0.6);
+    padding: 2.8rem 1.5rem;
+  }
+  .grid-left-item h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 1px;
+  }
+  .grid-left-item p span img {
+    height: 40px;
+    width: 30px;
+  }
+  .grid-left-item p {
+    font-size: 2em;
+    color: #1b4e3f;
+    font-weight: 600;
+    font-family: "Shadows Into Light", cursive;
+  }
+  .grid-right-item h3 {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .grid-right-item p {
+    color: rgb(172, 137, 137);
+    font-weight: 500;
+  }
+  .cardboard-body {
+    display: flex;
   }
   /* css for weather ejs ends here */
 }
