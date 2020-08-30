@@ -1,7 +1,7 @@
-import express from "express";
+const express = require("express");
 const router = express.Router();
-import axios from "axios";
-import key from "../config";
+const axios = require("axios");
+const key = require("../config");
 
 router.get("/home", (req, res) => {
   res.render("home");

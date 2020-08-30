@@ -1,8 +1,8 @@
-import express from "express";
+const express = require("express");
 const app = express();
-import path from "path";
-import router from "./routes/city";
-import ejsLint from "ejs-lint";
+const path = require("path");
+const router = require("./routes/city");
+const ejsLint = require("ejs-lint");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
