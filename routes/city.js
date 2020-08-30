@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const axios = require("axios");
-const key = require("../config");
 
 router.get("/home", (req, res) => {
   res.render("home");
