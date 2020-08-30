@@ -27,7 +27,6 @@ h3 {
   background-image: url("https://res.cloudinary.com/jerry299/image/upload/v1598588849/banner_nzhtaq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   max-width: 100%;
   padding: 3em 0;
   margin: 0 auto;
@@ -52,8 +51,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .cardboard {
-  }
+
   .app-body2 {
     background: linear-gradient(-70deg, #43ec43 45%, rgba(0, 0, 0, 0.3) 30%),
       url("https://res.cloudinary.com/jerry299/image/upload/c_fit,r_4,w_1092/v1597899566/weatherpic1_gpy9o5.jpg");
@@ -87,26 +85,12 @@ h3 {
     line-height: 2rem;
   }
   /* css for weather ejs starts here */
-  .city {
-    font-size: 1.7rem;
-    color: #93b5e1;
-  }
-  .city-name {
-    margin-left: 2.3rem;
-    color: #ff847c;
-    font-size: 1.2rem;
-  }
-  .dta-name {
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-  .dta-response {
-    font-family: "Josefin Sans", sans-serif;
-    color: #006a71;
-    margin-left: 2rem;
-  }
+
   h1 {
     color: rgb(236, 229, 229);
+  }
+  .cardboard {
+    margin-top: 5rem;
   }
   .home a {
     text-decoration: none;
@@ -125,6 +109,9 @@ h3 {
     margin: 2rem;
     padding-left: 4rem;
     width: 80%;
+  }
+  .weather {
+    height: 100vh;
   }
   .c-header {
     height: 250px;
@@ -268,6 +255,10 @@ h3 {
   .display-message {
     margin-top: 5rem;
   }
+  .weather {
+    width: 100vw;
+    overflow-x: hidden;
+  }
   .display {
     margin-bottom: 3rem;
     color: rgb(255, 255, 255);
@@ -277,6 +268,9 @@ h3 {
     color: rgb(206, 216, 226);
   }
   /* css for weather ejs starts here */
+  .home {
+    margin-bottom: 2rem;
+  }
   .city {
     font-size: 1.7rem;
     color: #93b5e1;
@@ -286,14 +280,7 @@ h3 {
     color: #ff847c;
     font-size: 1.2rem;
   }
-  .dta-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .dta-response {
-    font-family: "Josefin Sans", sans-serif;
-    color: #006a71;
-  }
+
   h1 {
     color: rgb(236, 229, 229);
   }
@@ -301,8 +288,110 @@ h3 {
     text-decoration: none;
     color: rgb(243, 203, 203);
     float: right;
+    margin-right: 1.7rem;
   }
+  .results h1 {
+    padding: 0 1.2rem;
+  }
+  .cardboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .c-header {
+    background-color: rgba(17, 15, 15, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .city-name,
+  .country {
+    font-size: 2.3rem;
+    color: #fff;
+  }
+  .city-weather-description {
+    font-size: 14px;
+    color: rgb(223, 205, 205);
+    margin: 0.5em 0;
+    text-transform: capitalize;
+  }
+  .city2 h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+  .city-temperature {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  .city-time img {
+    visibility: hidden;
+  }
+  .city-time .date h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    color: #fff;
 
+    letter-spacing: 0.2rem;
+    margin-top: -30rem;
+    margin-left: 10rem;
+    margin-bottom: 20px;
+  }
+  .cardboard-body {
+    position: relative;
+  }
+  .grid-left-item p img {
+    visibility: hidden;
+  }
+  .grid-left {
+    width: 80%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background: rgba(95, 252, 204, 0.69);
+    padding: 1.2rem 1.3rem;
+  }
+  .grid-left-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-left-item:nth-child(1) {
+    height: 5rem;
+  }
+  .grid-left-item h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 1px;
+  }
+  .grid-right {
+    width: 80%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background: rgba(255, 8, 8, 0.6);
+    padding: 1.2rem 1.3rem;
+  }
+  .grid-right-item h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .grid-right-item p {
+    color: rgb(211, 183, 183);
+    font-weight: 500;
+  }
+  .grid-right-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .grid-right-item:nth-child(3) h3 {
+    width: 30%;
+  }
   /* css for weather ejs ends here */
 }
 

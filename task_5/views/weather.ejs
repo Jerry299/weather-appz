@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="/stylesheets/main.css" />
   </head>
   <body class="weather">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="results">
           <h1>
             Search Results
           </h1>
           <span class="home"><a href="/api/home">Go Back</a></span>
-          <div class="mt-5 cardboard">
+          <div class="cardboard">
             <div class="c-header">
               <div class="city-info">
                 <div class="city">
@@ -79,7 +79,7 @@
               <div class="grid-right">
                 <div class="grid-right-item">
                   <h3>Pressure</h3>
-                  <p><%= data.main.pressure %><span>hPa</span></p>
+                  <p><%= data.main.pressure %><span> hPa</span></p>
                 </div>
                 <div class="grid-right-item">
                   <h3>Humidity</h3>
@@ -95,44 +95,6 @@
                 </div>
               </div>
             </div>
-            <!-- <ul class="list-group-body">
-              <li class="list-group-item">
-                <span class="dta-name"> Weather-Type :</span>
-                <span class="dta-response"><%=data.weather[0].main%></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Weather-Description :</span>
-                <span class="dta-response"
-                  ><%= data.weather[0].description %></span
-                >
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Temperature in Kelvin :</span>
-                <span class="dta-response"><%= data.main.temp %></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Pressure in hPa :</span>
-                <span class="dta-response"><%= data.main.pressure %></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Humidity :</span>
-                <span class="dta-response"><%= data.main.humidity %></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name"
-                  >Atmospheric Pressure at Sea Level (hPa):</span
-                >
-                <span class="dta-response"><%= data.main.sea_level %></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Wind Speed (met/sec) :</span>
-                <span class="dta-response"><%= data.wind.speed %></span>
-              </li>
-              <li class="list-group-item">
-                <span class="dta-name">Cloud Percentage :</span>
-                <span class="dta-response"><%= data.clouds.all %></span>
-              </li>
-            </ul> -->
           </div>
         </div>
       </div>
