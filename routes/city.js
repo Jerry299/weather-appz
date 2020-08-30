@@ -46,4 +46,4 @@ router.get("/map-result", (req, res) => {
   res.render("mapsResult");
 });
 
-export default router;
+module.exports = router;
