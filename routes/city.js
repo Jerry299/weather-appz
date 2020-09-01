@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const axios = require("axios");
 
-router.get("/home", (req, res) => {
+router.get("/", (req, res) => {
   res.render("home");
 });
 router.get("/map", (req, res) => {
@@ -19,8 +19,7 @@ router.get("/result", (req, res) => {
       res.render("weather", { data: response.data });
     })
     .catch((err) => {
-      console.log(err);
-      res.status(404).render("cityError");
+      res.status(404).render("cityError", { err });
     });
 });
 router.get("/map-result", (req, res) => {
