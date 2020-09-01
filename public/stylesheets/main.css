@@ -215,6 +215,15 @@ h3 {
     background-size: cover;
     width: 70vw;
   }
+  .app-body2 {
+    background: linear-gradient(-20deg, #43ec43 10%, rgba(0, 0, 0, 0.5) 80%),
+      url("https://res.cloudinary.com/jerry299/image/upload/c_fit,r_4,w_1092/v1597899566/weatherpic1_gpy9o5.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+  }
   #home-form {
     margin-top: 11rem;
   }
@@ -245,6 +254,15 @@ h3 {
     background-size: cover;
     width: 100vw;
     height: 100%;
+  }
+  .app-body2 {
+    background: linear-gradient(-20deg, #43ec43 10%, rgba(0, 0, 0, 0.5) 80%),
+      url("https://res.cloudinary.com/jerry299/image/upload/c_fit,r_4,w_1092/v1597899566/weatherpic1_gpy9o5.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
   }
   #home-form {
     margin-top: 3rem;

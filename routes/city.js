@@ -19,6 +19,7 @@ router.get("/result", (req, res) => {
       res.render("weather", { data: response.data });
     })
     .catch((err) => {
+      console.log(err);
       res.status(404).render("cityError");
     });
 });

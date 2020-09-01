@@ -46,10 +46,12 @@
               Get The Current Weather Map for Your City.
             </h1>
             <div class="display-body">
-              Want to catch a train home, but don't want to be stuck in a
-              terrible weather? Then save yourself of calling a meterlogist,
-              we've got you covered.Just enter your latitude and longitude and
-              get maps for Precipitation,Pressure,Cloud,Wind and Temperature.
+              We utilize the Google map systems to get the map of your current
+              location,enable your geoloacation and accept the request to get
+              the map.This map requires that you consent to location sharing
+              when prompted by your browser. If you see the error "The
+              Geolocation service failed.", it means you probably did not give
+              permission for the browser to locate you.
             </div>
           </div>
           <div class="col-md-4 offset-md-2" id="home-form">
@@ -61,13 +63,13 @@
                 class="col-sm-12"
                 id="weather-input"
               >
-                <label class="text-white mt-2 ml-1"
+                <!-- <label class="text-white mt-2 ml-1"
                   >Latitude or Y-Value
                   <small style="color: red; margin-left: 1.8rem;"
                     >(Must be a Number)</small
                   ></label
-                >
-                <input
+                > -->
+                <!-- <input
                   class="form-control mb-3"
                   type="number"
                   step="0.0000001"
@@ -81,8 +83,8 @@
                   <small style="color: red; margin-left: 1.8rem;"
                     >(Must be a Number)</small
                   ></label
-                >
-                <input
+                > -->
+                <!-- <input
                   class="form-control mb-3"
                   type="number"
                   step="0.0000001"
@@ -91,9 +93,9 @@
                   name="long"
                 />
 
-                <small class="errorMsg"></small>
+                <small class="errorMsg"></small> -->
 
-                <div class="input-group mb-3 mt-3">
+                <!-- <div class="input-group mb-3 mt-3">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="inputGroupSelect01"
                       >Options</label
@@ -111,8 +113,8 @@
                     <option value="wind">Wind</option>
                     <option value="pressure">Pressure</option>
                   </select>
-                </div>
-                <small class="errorMsg"></small>
+                </div> -->
+                <!-- <small class="errorMsg"></small> -->
                 <button class="btn btn-primary btn-lg m-3" type="submit">
                   Get Map
                 </button>
